@@ -1,14 +1,5 @@
 .flex-container {display: flex; flex-wrap: wrap; justify-content: center;}
 
-.ACHinavigation {
-	height: 100%;
-  	width: 200px;
-	position: fixed;
-	top: 120px;
-    background-color: #7a8671;
-    padding: 20px;
-}
-
 .card {
     top: 100px;
     width: 850px;
@@ -19,10 +10,21 @@
     margin-top: 95px;
 }
 
-a {color: white;}
+.ACHinavigation {
+	height: 100%;
+  	width: auto;
+	position: fixed;
+	top: 120px;
+    background-color: #7a8671;
+    padding: 40px 0 0 0;
+}
 
-nav a {
-    color: black;
+.ACHInavigation a {
+    color: white;
+	padding: 20px;
+	background: #e4e2e2;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .nav {
@@ -30,4 +32,8 @@ nav a {
     height: 100px;
 	background: #36513b;
     position: fixed;
+}
+
+nav a {
+    color: black;
 }
