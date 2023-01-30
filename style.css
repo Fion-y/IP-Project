@@ -1,8 +1,8 @@
-.navigation {
+.ACHinavigation {
 	height: 100%;
   	width: 200px;
 	position: fixed;
-	top: 0;
+	top: 200px;
     background-color: #324626;
     padding: 20px;
     border-color: rgb(173, 135, 91);
