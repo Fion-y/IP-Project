@@ -38,6 +38,7 @@ h1 {
     height: 100px;
 	background: #485b79;
     position: fixed;
+    justify-content:center;
 }
 
 .nav a {
@@ -45,9 +46,9 @@ h1 {
 	padding: 20px;
 	background: #e4e2e2;
     border-radius: 10px;
-    margin: 50px;
+    margin: 20px;
 }
 
 .img {
-    width: 100px;
+    width: 80px;
 }
