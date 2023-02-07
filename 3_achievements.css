@@ -2,7 +2,7 @@
 
 .card {
     top: 100px;
-    width: 850px;
+    width: 900px;
 	padding: 20px;
 	background: #e4e2e2;
     border-radius: 10px;
@@ -10,17 +10,21 @@
     margin-top: 95px;
 }
 
+h1 {
+    color:#647694;
+}
+
 .ACHinavigation {
-	height: 100%;
+	height: 500px;
   	width: auto;
 	position: fixed;
 	top: 120px;
-    background-color: #7a8671;
+    background-color: #647694;
     padding: 40px 0 0 0;
 }
 
 .ACHInavigation a {
-    color: white;
+    color: #7c93b9;
 	padding: 20px;
 	background: #e4e2e2;
     border-radius: 10px;
@@ -28,12 +32,22 @@
 }
 
 .nav {
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100px;
-	background: #36513b;
+	background: #485b79;
     position: fixed;
 }
 
-nav a {
-    color: black;
+.nav a {
+    color: #7c93b9;
+	padding: 20px;
+	background: #e4e2e2;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+img {
+    width: 100px;
 }
