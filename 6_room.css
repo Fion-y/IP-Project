@@ -19,3 +19,7 @@ body{background-image: url(/photos/background.png);}
 }
 
 .img {width: 90px; padding-top: 10px; padding-bottom: 10px;}
+
+.sketchfab-embed-wrapper{
+  margin-top: 130px;
+}
