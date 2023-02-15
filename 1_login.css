@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
 
 body{background-image: url(/photos/background.png);}
 
@@ -15,6 +15,12 @@ h1 {
   width: 100%;
 }
 
+.signin {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
 .logo {
   width: 120px;
   display: block;
@@ -29,4 +35,14 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+input[type="submit"],input[type="text"], button {
+  width: 450px;
+  background-color: #abc3c7;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  font-family: 'Crimson Pro', serif;
 }
