@@ -14,40 +14,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     //what kind of interface we want at the start 
     const APIKEY = "63bb7050969f06502871acd4";
     getContacts();
-    $("#update-student-container").hide();
     $("#add-update-msg").hide();
   
     //[STEP 1]: Create our submit form listener
-    $("#student-submit").on("click", function (e) {
+    $("#username-submit").on("click", function (e) {
       //prevent default action of the button 
       e.preventDefault();
   
       //[STEP 2]: let's retrieve form data
       //for now we assume all information is valid
       //you are to do your own data validation
-      let studentName = $("#student-name").val();
-      let studentStudentid = $("#student-studentid").val();
-      let studentMentor = $("#student-mentor").val();
-      let studentClass = $("#student-class").val();
-      let studentNumber = $("#student-number").val();
-      let studentEmail = $("#student-email").val();
+      let username = $("#username").val();
+      let password= $("#password").val();
   
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
       let jsondata = {
-        "name": studentName,
-        "studentid": studentStudentid,
-        "mentor": studentMentor,
-        "class": studentClass,
-        "number": studentNumber,
-        "email": studentEmail
+        "username": username,
+        "password": password
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://interactivedev-c4d2.restdb.io/rest/student",
+        "url": "https://interactivedev-c4d2.restdb.io/rest/username",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",
@@ -59,9 +50,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         "beforeSend": function(){
           //@TODO use loading bar instead
           //disable our button or show loading bar
-          $("#student-submit").prop( "disabled", true);
+          $("#username-submit").prop( "disabled", true);
           //clear our form using the form id and triggering it's reset feature
-          $("#add-student-form").trigger("reset");
+          $("#add-username-form").trigger("reset");
         }
       }
   
@@ -69,7 +60,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       $.ajax(settings).done(function (response) {
         console.log(response);
         
-        $("#student-submit").prop( "disabled", false);
+        $("#username-submit").prop( "disabled", false);
         
         //@TODO update frontend UI 
         $("#add-update-msg").show().fadeOut(3000);
@@ -81,7 +72,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   
     //[STEP] 6
-    //let's create a function to allow you to retrieve all the information in your students
+    //let's create a function to allow you to retrieve all the information in your usernames
     //by default we only retrieve 10 results
     function getContacts(limit = 10, all = true) {
   
@@ -89,7 +80,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://interactivedev-c4d2.restdb.io/rest/student",
+        "url": "https://interactivedev-c4d2.restdb.io/rest/username",
         "method": "GET", //[cher] we will use GET to retrieve info
         "headers": {
           "content-type": "application/json",
@@ -123,13 +114,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           //we use ${content} because -> content += content 
           //we want to add on previous content at the same time
           content = `${content}<tr id='${response[i]._id}'><td>${response[i].name}</td>
-          <td>${response[i].studentid}</td>
-          <td>${response[i].mentor}</td>
-          <td>${response[i].class}</td>
-          <td>${response[i].number}</td>
-          <td>${response[i].email}</td>
+          <td>${response[i].username}</td>
+          <td>${response[i].password}</td>
           <td><a href='#' class='delete' 
-          data-id='${response[i]._id}'>Del</a></td><td><a href='#update-student-container' class='update' 
+          data-id='${response[i]._id}'>Del</a></td><td><a href='#update-username-container' class='update' 
           data-id='${response[i]._id}' data-msg='${response[i].message}' data-name='${response[i].name}' 
           data-email='${response[i].email}'>Update</a></td></tr>`;
   
@@ -137,9 +125,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
         //[STEP 9]: Update our HTML content
         //let's dump the content into our table body
-        $("#student-list tbody").html(content);
+        $("#username-list tbody").html(content);
   
-        $("#total-students").html(response.length);
+        $("#total-username").html(response.length);
       });
   
   
@@ -148,69 +136,60 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     //[STEP 10]: Create our update listener
     //here we tap onto our previous table when we click on update
     //this is a delegation feature of jquery
-    //because our content is dynamic in nature, we listen in on the main container which is "#student-list". For each row we have a class .update to help us
-    $("#student-list").on("click", ".update", function (e) {
+    //because our content is dynamic in nature, we listen in on the main container which is "#username-list". For each row we have a class .update to help us
+    $("#username-list").on("click", ".update", function (e) {
       e.preventDefault();
       //update our update form values
-      let studentName = $(this).data("name");
-      let studentStudentid= $(this).data("studentid");
-      let studentMentor = $(this).data("mentor");
-      let studentClass = $(this).data("class");
-      let studentNumber = $(this).data("number");
-      let studentEmail = $(this).data("email");
-      let studentId = $(this).data("id");
+      let usernameName = $(this).data("username");
+      let usernameusernameid= $(this).data("password");
+      let usernameId = $(this).data("id");
       console.log($(this).data("msg"));
   
-      //[STEP 11]: Load in our data from the selected row and add it to our update student form 
-      $("#update-student-name").val(studentName);
-      $("#update-student-studentid").val(studentStudentid);
-      $("#update-student-mentor").val(studentMentor);
-      $("#update-student-class").val(studentClass);
-      $("#update-student-number").val(studentNumber);
-      $("#update-student-email").val(studentEmail);
-      $("#update-student-id").val(studentId);
-      $("#update-student-container").show();
+      //[STEP 11]: Load in our data from the selected row and add it to our update username form 
+      $("#update-username").val(username);
+      $("#update-password").val(password);
+      $("#update-username-container").show();
   
-    });//end student-list listener for update function
+    });//end username-list listener for update function
   
-    //[STEP 12]: Here we load in our student form data
+    //[STEP 12]: Here we load in our username form data
     //Update form listener
-    $("#update-student-submit").on("click", function (e) {
+    $("#update-username-submit").on("click", function (e) {
       e.preventDefault();
       //retrieve all my update form values
-      let studentName = $("#update-student-name").val();
-      let studentStudentid = $("#update-student-studentid").val();
-      let studentMentor = $("#update-student-mentor").val();
-      let studentClass = $("#update-student-class").val();
-      let studentNumber = $("#update-student-number").val();
-      let studentEmail = $("#update-student-email").val();
-      let studentId = $("#update-student-id").val();
+      let usernameName = $("#update-username-name").val();
+      let usernameusernameid = $("#update-username-usernameid").val();
+      let usernameMentor = $("#update-username-mentor").val();
+      let usernameClass = $("#update-username-class").val();
+      let usernameNumber = $("#update-username-number").val();
+      let usernameEmail = $("#update-username-email").val();
+      let usernameId = $("#update-username-id").val();
   
-      //console.log($("#update-student-msg").val());
-      //console.log(studentMsg);
+      //console.log($("#update-username-msg").val());
+      //console.log(usernameMsg);
   
       //[STEP 12a]: We call our update form function which makes an AJAX call to our RESTDB to update the selected information
-      updateForm(studentId, studentName, studentStudentid, studentClass, studentMentor, studentNumber, studentEmail);
-    });//end updatestudentform listener
+      updateForm(usernameId, usernameName, usernameusernameid, usernameClass, usernameMentor, usernameNumber, usernameEmail);
+    });//end updateusernameform listener
   
     //[STEP 13]: function that makes an AJAX call and process it 
     //UPDATE Based on the ID chosen
-    function updateForm(id, studentName, studentStudentid, studentClass, studentMentor, studentNumber, studentEmail) {
+    function updateForm(id, usernameName, usernameusernameid, usernameClass, usernameMentor, usernameNumber, usernameEmail) {
       //@TODO create validation methods for id etc. 
       
       var jsondata = { 
-        "name": studentName, 
-        "studentid": studentStudentid,
-        "mentor": studentMentor,
-        "class": studentClass,
-        "number": studentNumber,
-        "email": studentEmail };
+        "name": usernameName, 
+        "usernameid": usernameusernameid,
+        "mentor": usernameMentor,
+        "class": usernameClass,
+        "number": usernameNumber,
+        "email": usernameEmail };
   
       console.log(jsondata);
       var settings = {
         "async": true,
         "crossDomain": true,
-        "url": `https://interactivedev-c4d2.restdb.io/rest/student/${id}`,//update based on the ID
+        "url": `https://interactivedev-c4d2.restdb.io/rest/username/${id}`,//update based on the ID
         "method": "PUT",
         "headers": {
           "content-type": "application/json",
@@ -221,12 +200,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         "data": JSON.stringify(jsondata)
       }
   
-      //[STEP 13a]: send our AJAX request and hide the update student form
+      //[STEP 13a]: send our AJAX request and hide the update username form
       $.ajax(settings).done(function (response) {
         console.log(response);
         
-        $("#update-student-container").fadeOut(5000);
-        //update our students table
+        $("#update-username-container").fadeOut(5000);
+        //update our usernames table
         getContacts();
       });
     }//end updateform function
