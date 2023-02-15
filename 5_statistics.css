@@ -37,7 +37,45 @@ body{
 }
   
 .podium .third {
-  min-height: 100px;
+  min-height: 150px;
   background: green;
 }
-  
+
+/*card*/
+
+.card {
+  background-color: plum;
+  margin-left: auto;
+  margin: 5%;
+}
+
+.words {
+  background-color: lavender;
+}
+
+/* make side to side*/
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table-cell;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
