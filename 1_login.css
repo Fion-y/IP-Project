@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
+
+body{background-image: url(/photos/background.png);}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  color: rgb(64, 100, 114);
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -15px;
+}
+
+.flex-container {
+  align-content: center;
+  width: 100%;
+}
+
+.signin {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+.logo {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -30px;
+  margin-top: 20px;
+}
+
+.pfp {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="submit"],input[type="text"], button {
+  width: 450px;
+  background-color: #abc3c7;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  font-family: 'Crimson Pro', serif;
+}

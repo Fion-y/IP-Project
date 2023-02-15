@@ -1,5 +1,9 @@
 .flex-container {display: flex; flex-wrap: wrap; justify-content: center;}
 
+body{
+    background-image: url(/photos/background.png);
+  }
+
 .card {
     top: 100px;
     width: 900px;
