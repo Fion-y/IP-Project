@@ -157,33 +157,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     $("#update-username-submit").on("click", function (e) {
       e.preventDefault();
       //retrieve all my update form values
-      let usernameName = $("#update-username-name").val();
-      let usernameusernameid = $("#update-username-usernameid").val();
-      let usernameMentor = $("#update-username-mentor").val();
-      let usernameClass = $("#update-username-class").val();
-      let usernameNumber = $("#update-username-number").val();
-      let usernameEmail = $("#update-username-email").val();
+      let usernameName = $("#update-username").val();
+      let usernameusernameid = $("#update-password").val();
       let usernameId = $("#update-username-id").val();
   
       //console.log($("#update-username-msg").val());
       //console.log(usernameMsg);
   
       //[STEP 12a]: We call our update form function which makes an AJAX call to our RESTDB to update the selected information
-      updateForm(usernameId, usernameName, usernameusernameid, usernameClass, usernameMentor, usernameNumber, usernameEmail);
+      updateForm(username, password);
     });//end updateusernameform listener
   
     //[STEP 13]: function that makes an AJAX call and process it 
     //UPDATE Based on the ID chosen
-    function updateForm(id, usernameName, usernameusernameid, usernameClass, usernameMentor, usernameNumber, usernameEmail) {
+    function updateForm(username, password) {
       //@TODO create validation methods for id etc. 
       
       var jsondata = { 
-        "name": usernameName, 
-        "usernameid": usernameusernameid,
-        "mentor": usernameMentor,
-        "class": usernameClass,
-        "number": usernameNumber,
-        "email": usernameEmail };
+        "username": username, 
+        "password": password };
   
       console.log(jsondata);
       var settings = {

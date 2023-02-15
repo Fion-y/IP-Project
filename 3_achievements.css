@@ -14,9 +14,7 @@ body{
     margin-top: 95px;
 }
 
-h1 {
-    color:#647694;
-}
+h1 {color:#647694;}
 
 .ACHinavigation {
 	height: 500px;
@@ -42,7 +40,7 @@ h1 {
     height: 100px;
 	background: #485b79;
     position: fixed;
-    justify-content:center;
+    text-align:center;
 }
 
 .nav a {
