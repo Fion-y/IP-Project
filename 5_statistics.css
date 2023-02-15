@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&display=swap');
+
+/*background*/
+
 body{
     background-image: url(/photos/background.png);
   }
+
+.podium {
+  display: flex;
+  align-items: flex-end;
+}
+  
+.item {
+  width: 200px;
+}
+  
+.podium__rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+
+.podium .first {
+    min-height: 300px;
+    background: gold;
+  }
+    
+  
+  
+.podium .second {
+  min-height: 200px;
+  background: blue;
+}
+  
+.podium .third {
+  min-height: 100px;
+  background: green;
+}
+  
