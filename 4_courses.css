@@ -3,7 +3,7 @@
 
 body{
   background-image: url(/photos/background.png);
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Rock Salt';
 }
 
 .nav {
@@ -37,7 +37,7 @@ body{
 
 
 p {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Rock Salt';
 }
 
 .picspace {
