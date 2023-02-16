@@ -1,4 +1,7 @@
+/* background*/
 body{background-image: url(/photos/background.png);}
+
+/*navbar*/
 
 .nav {
   top: 0px;
@@ -20,3 +23,9 @@ body{background-image: url(/photos/background.png);}
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
+/*button*/
+
+.button{
+  padding: 20px;
+  display: block;
+}
