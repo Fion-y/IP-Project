@@ -24,6 +24,7 @@ html {scroll-behavior: smooth;}
 
 .center {
   margin: auto;
+  margin-left: 500px;
   width: 50%;
   padding: 10px;
 }
@@ -73,8 +74,7 @@ th {
   color:#647694;
   border-radius: 20px;
   padding: 10px;
-  width: 100%;
-  margin:auto;
+  margin-right: 300px;
 }
 
 .spacer{margin-bottom: 30px;}
@@ -90,13 +90,12 @@ label {
   font-size: 15px;}
 
 .ACHinavigation {
-	height: 510px;
+	height: 100%;
   top: 150px;
   width: auto;  
   margin-left: 50px;
 	position: fixed;
   background-color: #647694;
-  padding: 10px 0 0 0;
   border-radius: 40px;
   text-align: center;
 }
@@ -118,6 +117,28 @@ label {
   margin: 20px;
   font-family: 'Varela Round', sans-serif;
   transition-duration: 0.4s;}
+
+  h2 {
+    color:white; 
+    font-family: 'Rock Salt', cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+
+.stars {
+  color:white;
+  background-color: #647694;
+  text-align: center;
+  height: 100%;
+  top: 155px;
+  width: 150px;  
+  margin-left: 330px;
+	position: fixed;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
 
 @media only screen and (max-width: 600px) {
   .img {width: 30px; }

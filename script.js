@@ -208,15 +208,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   function countCheckboxesID(){
     var a = document.forms["IDstar"];
     var x =a.querySelectorAll('input[type="checkbox"]:checked');
-    let IDtotal = `Stars Accumulated: ${x.length}`
+    var ID = x.length;
+    let IDtotal = `Stars Accumulated: ${ID}`;
     alert(IDtotal);
+    document.getElementById("IDnow").innerHTML = Number(ID);
    }
 
    function countCheckboxesAD(){
     var a = document.forms["ADstar"];
     var b =a.querySelectorAll('input[type="checkbox"]:checked');
-    let ADtotal = `Stars Accumulated: ${b.length}`
+    var AD = b.length;
+    let ADtotal = `Stars Accumulated: ${AD}`;
     alert(ADtotal);
+    document.getElementById("ADnow").innerHTML = Number(AD);
    }
 
    function countCheckboxesIS(){
@@ -224,6 +228,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     var d =c.querySelectorAll('input[type="checkbox"]:checked');
     let IStotal = `Stars Accumulated: ${d.length}`
     alert(IStotal);
+    document.getElementById("ISnow").innerHTML = Number(d.length);
    }
 
    function countCheckboxes3DF(){
@@ -231,6 +236,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     var f =e.querySelectorAll('input[type="checkbox"]:checked');
     let DFtotal = `Stars Accumulated: ${f.length}`
     alert(DFtotal);
+    document.getElementById("DFnow").innerHTML = Number(f.length);
    }
 
    function countCheckboxesGC(){
@@ -238,6 +244,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     var h =g.querySelectorAll('input[type="checkbox"]:checked');
     let GCtotal = `Stars Accumulated: ${h.length}`
     alert(GCtotal);
+    document.getElementById("GCnow").innerHTML = Number(h.length);
    }
 
    function countCheckboxesPMT(){
@@ -245,8 +252,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     var j =i.querySelectorAll('input[type="checkbox"]:checked');
     let PMTtotal = `Stars Accumulated: ${j.length}`
     alert(PMTtotal);
+    document.getElementById("PMTnow").innerHTML = Number(j.length);
    }
 
+   function counttotal(){
+    let total = Number(IDnow) + Number(ADnow) + Number(ISnow) + Number(DFnow) + Number(GCnow) + Number(PMTnow);
+    sentence = `Total Stars Accumulated: ${total}`;
+    
+    document.getElementById("startotal").innerHTML = total;
+    alert(sentence);
+    return counttotal();
+   }
    function countCheckboxestotal(){
     var y = a+b+c+d+e+f+g+h+i+j ;
     let achitotal = `Stars Accumulated: ${y}`
