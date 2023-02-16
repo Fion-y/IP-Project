@@ -1,4 +1,10 @@
-body{background-image: url(/photos/background.png);}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
+
+
+body{
+  background-image: url(/photos/background.png);
+  font-family: 'Rock Salt', cursive;
+}
 
 .nav {
   top: 0px;
@@ -20,3 +26,11 @@ body{background-image: url(/photos/background.png);}
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
+.spacer{
+  margin-top: 800px;
+}
+
+
+p {
+  font-family: 'Rock Salt', cursive;
+}
