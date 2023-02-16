@@ -204,3 +204,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   })
   
+  function countCheckboxes(){
+    var a = document.forms["main"];
+    var x =a.querySelectorAll('input[type="checkbox"]:checked');
+    alert("${x.length}");
+   }
