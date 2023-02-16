@@ -4,6 +4,7 @@
     background-image: url(/photos/background.png);
   }
 
+<<<<<<< HEAD
   /*nav bar*/
 
   .nav {
@@ -27,6 +28,30 @@
   .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
   
   
+=======
+/*nav bar*/
+.nav {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 130px;
+  background: #485b79;
+  position: fixed;
+  text-align: center;
+}
+
+.nav a {
+  color: #7c93b9;
+  padding: 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin: 15px;
+}
+.logoimg {width: 100px; padding-top: 5px;}
+.img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
+
+.spacer{margin-bottom: 80px;}
+>>>>>>> d710499a43fc9626a3c5a439f0021ae01cde9f9f
 
   /*dropdown*/
 
