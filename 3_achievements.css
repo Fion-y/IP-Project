@@ -28,8 +28,20 @@ html {scroll-behavior: smooth;}
   padding: 10px;
 }
 
+button {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgb(230, 207, 168);
+  border-color: rgb(230, 207, 168);
+  color:white;
+  display: block;
+  font-family: 'Rock Salt', cursive;
+}
+
 body{background-image: url(/photos/background.png);}
-.spacer{margin-bottom: 80px;}
+.spacer1{margin-bottom: 80px;}
 h1 {
   color:#647694; 
   font-family: 'Rock Salt', cursive;
@@ -40,30 +52,38 @@ h1 {
   padding-bottom: 15px;
   border-radius: 10px;
   font-size: 20px;
+  text-align: center;
+}
+
+.checkboxesarea {
+  margin-left: 120px;
 }
 
 .modulename {
   background: rgb(165, 183, 216);
-  text-align: center;
   width: 900px;
   border-radius: 10px;
   margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
-th, td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
+th {
+  font-family: 'Rock Salt', cursive;
+  background-color: #e2e8f3;
+  color:#647694;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  margin:auto;
 }
 
-th {font-family: 'Rock Salt', cursive; padding: 40px; padding-top: 0px;}
-td {font-family: 'Varela Round', sans-serif;}
+.spacer{margin-bottom: 30px;}
 
 label {
   background-color: #7283a2;
   color: white;
   padding: 12px;
+  margin: 10px;
   border-radius: 50px;
   border-color: #ffffff;
   font-family: 'Varela Round', sans-serif;

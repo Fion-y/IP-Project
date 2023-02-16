@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+//for login page
   //[STEP 0]: Make sure our document is A-OK
   $(document).ready(function () {
     //what kind of interface we want at the start 
@@ -204,18 +204,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   })
   
-  function countCheckboxes(){
-    var a = document.forms["main"];
+  //achievements page
+  function countCheckboxesID(){
+    var a = document.forms["IDstar"];
     var x =a.querySelectorAll('input[type="checkbox"]:checked');
-    let sentence = `Stars Accumulated: ${x.length}`
-    alert(sentence);
+    let IDtotal = `Stars Accumulated: ${x.length}`
+    alert(IDtotal);
    }
 
-   function countCheckboxes1(){
-    var a = document.forms["main1"];
-    var x =a.querySelectorAll('input[type="checkbox"]:checked');
-    let sentence = `Stars Accumulated: ${x.length}`
-    alert(sentence);
+   function countCheckboxesAD(){
+    var a = document.forms["ADstar"];
+    var b =a.querySelectorAll('input[type="checkbox"]:checked');
+    let ADtotal = `Stars Accumulated: ${b.length}`
+    alert(ADtotal);
+   }
+
+   function countCheckboxesIS(){
+    var c = document.forms["ISstar"];
+    var d =c.querySelectorAll('input[type="checkbox"]:checked');
+    let IStotal = `Stars Accumulated: ${d.length}`
+    alert(IStotal);
+   }
+
+   function countCheckboxes3DF(){
+    var e = document.forms["DFstar"];
+    var f =e.querySelectorAll('input[type="checkbox"]:checked');
+    let DFtotal = `Stars Accumulated: ${f.length}`
+    alert(DFtotal);
+   }
+
+   function countCheckboxesGC(){
+    var g = document.forms["GCstar"];
+    var h =g.querySelectorAll('input[type="checkbox"]:checked');
+    let GCtotal = `Stars Accumulated: ${h.length}`
+    alert(GCtotal);
+   }
+
+   function countCheckboxesPMT(){
+    var i = document.forms["PMTstar"];
+    var j =i.querySelectorAll('input[type="checkbox"]:checked');
+    let PMTtotal = `Stars Accumulated: ${j.length}`
+    alert(PMTtotal);
+   }
+
+   function countCheckboxestotal(){
+    var y = a+b+c+d+e+f+g+h+i+j ;
+    let achitotal = `Stars Accumulated: ${y}`
+    alert(countCheckboxes3DF);
    }
 
 
