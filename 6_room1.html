@@ -1,0 +1,63 @@
+<html> 
+    <header> 
+        <title>My Work Space</title>
+    </header>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="6_room.css">
+        <script src="script.js"></script>
+        <div class="nav" class="flex-container">
+            <a href="3_achievements.html"><img src="/navbar/achievements.png" class="img"></a>
+            <a href="4_courses.html"><img src="/navbar/courses.png" class="img"></a>
+            <a href="2_profile.html"><img src="/navbar/profile.png" class="img"></a>
+            <a href="index.html"><img src="/photos/logo.png" class="logoimg"></a> 
+            <a href="5_statistics.html"><img src="/navbar/rankings.png" class="img"></a>
+            <a href="6_room.html"><img src="/navbar/room.png" class="img"></a>
+            <a href="7_shop.html"><img src="/navbar/shop.png" class="img"></a>
+        </div><br>
+    </head>
+
+<body>
+
+    <script>
+        if (number === 0) {
+          var element = document.getElementById("room1");
+          element.style.display = "initial";
+          var element2 = document.getElementById("room5");
+          element2.style.display = "none";
+          var element3 = document.getElementById("room10");
+          element3.style.display = "none";
+      };
+      </script>
+
+    <center>
+        <div class="circle" id="room10">
+        <div class="sketchfab-embed-wrapper"> <iframe title="room10" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="600" src="https://sketchfab.com/models/a5b2c6175e3f4979a34523ab8e45cda5/embed?autostart=1"> </iframe> 
+          </div>
+        </div>
+      
+      
+        
+        <div class="circle" id="room5">
+          <div class="sketchfab-embed-wrapper"> <iframe title="room5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="600" src="https://sketchfab.com/models/d5acbeba4d2f4ff880a9dabeed25b09e/embed?autostart=1"> </iframe> 
+              </div>
+        </div>
+      
+      
+        <div class="circle" id="room1">
+          <div class="sketchfab-embed-wrapper"> <iframe title="room1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="600" src="https://sketchfab.com/models/4de544b6661249c1b42eabda1c603d7d/embed?autostart=1"> </iframe> 
+              </div>
+        </div>
+      
+        
+        
+        
+        <input type="button" value="Add" id="add" onclick="add()"/>
+        <input type="button" value="Reset" id="reset" onclick="reset()"/>
+        <p>points: </p>
+        <p id="number">0</p>
+       
+        </center>
+</body>
+</html>
