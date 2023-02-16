@@ -83,10 +83,6 @@ h2 {
   margin: 5%;
 }
 
-.words {
-  background-color: lavender;
-}
-
 /*ad*/
 
 .ad {
@@ -95,9 +91,6 @@ h2 {
   margin: 5%;
 }
 
-.words {
-  background-color: lavender;
-}
 
 /*gc*/
 
@@ -105,10 +98,6 @@ h2 {
   background-color: #fdfd76;
   margin-left: auto;
   margin: 5%;
-}
-
-.words {
-  background-color: lavender;
 }
 
 /*3df*/
@@ -119,20 +108,12 @@ h2 {
   margin: 5%;
 }
 
-.words {
-  background-color: lavender;
-}
-
 /*pmt*/
 
 .pmt {
   background-color: lightblue;
   margin-left: auto;
   margin: 5%;
-}
-
-.words {
-  background-color: lavender;
 }
 
 /*is*/
@@ -143,9 +124,14 @@ h2 {
   margin: 5%;
 }
 
+/*words*/
+
 .words {
   background-color: lavender;
 }
+
+
+
 
 /* make side to side*/
 
