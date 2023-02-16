@@ -217,3 +217,73 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let sentence = `Stars Accumulated: ${x.length}`
     alert(sentence);
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//6_room
+var number = 0;
+
+function add() {
+  number++;
+  $('#number').text(number);
+
+  if (number < 5) {
+    var element = document.getElementById("room1");
+    element.style.display = "initial";
+    var element2 = document.getElementById("room5");
+    element2.style.display = "none";
+    var element3 = document.getElementById("room10");
+    element3.style.display = "none";
+    
+  } else if (number > 5) {
+    var element = document.getElementById("room5");
+    element.style.display = "initial";
+    var element2 = document.getElementById("room1");
+    element2.style.display = "none";
+    var element3 = document.getElementById("room10");
+    element3.style.display = "none";
+    
+  } else if (number > 9) {
+    var element = document.getElementById("room1");
+    element.style.display = "initial";
+    var element2 = document.getElementById("room5");
+    element2.style.display = "none";
+    var element3 = document.getElementById("room10");
+    element3.style.display = "none";
+  };
+
+  
+};
+
+function reset() {
+  number = 0;
+  $('#number').text(number);
+  var element = document.getElementById("room1");
+    element.style.display = "initial";
+    var element2 = document.getElementById("room5");
+    element2.style.display = "none";
+    var element3 = document.getElementById("room10");
+    element3.style.display = "none";
+};
