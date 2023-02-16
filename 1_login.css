@@ -47,7 +47,7 @@ input[type="submit"],input[type="text"], button {
   border-radius: 50px;
   border-color: #ffffff;
   font-family: 'Varela Round', sans-serif;
-  font-size: 20px ;
+  font-size: 20px;
 }
 
 ::placeholder {color: white; font-size: 25px; text-align: center;}
