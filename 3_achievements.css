@@ -1,36 +1,40 @@
-.flex-container {display: flex; flex-wrap: wrap; justify-content: center;}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
-body{
-    background-image: url(/photos/background.png);
-  }
+.flex-container {display: flex; flex-wrap: wrap; justify-content: center; display: block;
+}
+
+body{background-image: url(/photos/background.png);}
+.spacer{margin-bottom: 80px;}
 
 .card {
-    top: 100px;
-    width: 900px;
+  display: block;
+  top: 100px;
+  width: 900px;
 	padding: 20px;
 	background: #e4e2e2;
-    border-radius: 10px;
-    margin-left: 250px;
-    margin-top: 95px;
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-top: 95px;
+  text-align: center;
 }
 
 h1 {color:#647694;}
 
 .ACHinavigation {
 	height: 500px;
-  	width: auto;
+  width: auto;
 	position: fixed;
 	top: 120px;
-    background-color: #647694;
-    padding: 40px 0 0 0;
+  background-color: #647694;
+  padding: 40px 0 0 0;
 }
 
 .ACHInavigation a {
-    color: #7c93b9;
+  color: #7c93b9;
 	padding: 20px;
 	background: #e4e2e2;
-    border-radius: 10px;
-    margin: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 body{background-image: url(/photos/background.png);}
