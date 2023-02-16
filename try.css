@@ -1,44 +1,92 @@
-.mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
+.showcase .nav-bar {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--branding);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 90;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  top: 0;
+}
+
+.nav-logo {  /*CHECK WHEN UPLOADING LOGO*/
+  width: 14rem;
+  margin: auto .5rem;
+}
+
+.showcase .nav-bar .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.showcase .nav-bar .nav-links li {
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: .2em;
+  list-style: none;
+  transition: all .2s;
+}
+
+.showcase .nav-bar .nav-links a {
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+
+.nav-links li:hover,
+.nav-links li:focus {
+  transform: scale(1.2);
+}
+
+.showcase .nav-bar .nav-social {
+  margin: 0 2rem .5rem 2rem;
+}
+
+.showcase .nav-bar .nav-social a {
+  margin: 0 .5rem;
+  text-decoration: none;
+  color: var(--lightgrey);
+  font-size: 1.8rem;
+}
+
+.hamburger {
+  margin: 1em;
+  display: none;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 2px;
+  background-color: #d1d1d1;
+  margin: .4em;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .showcase {
+    height: 100vh;
   }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+
+  .nav-bar {
+
   }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    background: black;
-    display: block;
+
+  .nav-links {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    width: 40%;
+    height: 80vh;
+    top: 8rem;
+    background-color: var(--branding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+
+  .hamburger {
+    display: block;
   }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
+}
