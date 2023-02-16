@@ -1,39 +1,4 @@
-.flex-container {display: flex; flex-wrap: wrap; justify-content: center;}
-
-body{
-    background-image: url(/photos/background.png);
-  }
-
-.card {
-    top: 100px;
-    width: 900px;
-	padding: 20px;
-	background: #e4e2e2;
-    border-radius: 10px;
-    margin-left: 250px;
-    margin-top: 95px;
-}
-
-h1 {color:#647694;}
-
-.ACHinavigation {
-	height: 500px;
-  	width: auto;
-	position: fixed;
-	top: 120px;
-    background-color: #647694;
-    padding: 40px 0 0 0;
-}
-
-.ACHInavigation a {
-    color: #7c93b9;
-	padding: 20px;
-	background: #e4e2e2;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-body{background-image: url(/photos/background.png);}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
 .nav {
   top: 0px;
@@ -47,10 +12,93 @@ body{background-image: url(/photos/background.png);}
 
 .nav a {
   color: #7c93b9;
-	padding: 20px;
+	padding: 0px;
   margin-top: 20px;
   border-radius: 10px;
   margin: 15px;
 }
+.logoimg {width: 100px; padding-top: 5px;}
+.img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
-.img {width: 90px; padding-top: 10px; padding-bottom: 10px;}
+html {scroll-behavior: smooth;}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+body{background-image: url(/photos/background.png);}
+.spacer{margin-bottom: 80px;}
+h1 {
+  color:#647694; 
+  font-family: 'Rock Salt', cursive;
+  display: block;
+  background: white;
+  width: 900px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.modulename {
+  background: rgb(165, 183, 216);
+  text-align: center;
+  width: 900px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+th {font-family: 'Rock Salt', cursive; padding: 40px; padding-top: 0px;}
+td {font-family: 'Varela Round', sans-serif;}
+
+label {
+  background-color: #7283a2;
+  color: white;
+  padding: 12px;
+  border-radius: 50px;
+  border-color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;}
+
+.ACHinavigation {
+	height: 510px;
+  top: 150px;
+  width: auto;  
+  margin-left: 50px;
+	position: fixed;
+  background-color: #647694;
+  padding: 10px 0 0 0;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.ACHInavigation a {
+  color: white;
+  background: #b3bcd4;
+	padding: 20px;
+  border-radius: 50px;
+  margin: 20px;
+  font-family: 'Varela Round', sans-serif;
+  display: block;}
+
+.ACHInavigation a:hover {
+  color: #7c93b9;
+	padding: 20px;
+	background: white;
+  border-radius: 50px;
+  margin: 20px;
+  font-family: 'Varela Round', sans-serif;
+  transition-duration: 0.4s;}
+
+@media only screen and (max-width: 600px) {
+  .img {width: 30px; }
+}

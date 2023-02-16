@@ -12,10 +12,11 @@ body{background-image: url(/photos/background.png);}
 
 .nav a {
   color: #7c93b9;
-	padding: 20px;
+	padding: 0px;
   margin-top: 20px;
   border-radius: 10px;
   margin: 15px;
 }
+.logoimg {width: 100px; padding-top: 5px;}
+.img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
-.img {width: 90px; padding-top: 10px; padding-bottom: 10px;}
