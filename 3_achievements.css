@@ -18,26 +18,37 @@ body{background-image: url(/photos/background.png);}
   text-align: center;
 }
 
-h1 {color:#647694;}
+h1 {color:#647694; font-family: 'Rock Salt', cursive;
+}
 
 .ACHinavigation {
-	height: 500px;
+	height: 600px;
   width: auto;
 	position: fixed;
-	top: 120px;
+	top: 150px;
   background-color: #647694;
   padding: 40px 0 0 0;
+  border-radius: 40px;
+  text-align: center;
 }
 
 .ACHInavigation a {
-  color: #7c93b9;
+  color: white;
+  background: #b3bcd4;
 	padding: 20px;
-	background: #e4e2e2;
-  border-radius: 10px;
+  border-radius: 50px;
   margin: 20px;
+  font-family: 'Varela Round', sans-serif;
 }
 
-body{background-image: url(/photos/background.png);}
+.ACHInavigation a:hover {
+  color: #7c93b9;
+	padding: 20px;
+	background: white;
+  border-radius: 50px;
+  margin: 20px;
+  font-family: 'Varela Round', sans-serif;
+  transition-duration: 0.4s;}
 
 .nav {
   top: 0px;
