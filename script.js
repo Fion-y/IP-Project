@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+//for login page
   //[STEP 0]: Make sure our document is A-OK
   $(document).ready(function () {
     //what kind of interface we want at the start 
@@ -205,7 +205,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   })
   
   //achievements page
-
   function countCheckboxesID(){
     var a = document.forms["IDstar"];
     var x =a.querySelectorAll('input[type="checkbox"]:checked');
@@ -251,5 +250,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    function countCheckboxestotal(){
     var y = a+b+c+d+e+f+g+h+i+j ;
     let achitotal = `Stars Accumulated: ${y}`
-    alert(achitotal);
+    alert(countCheckboxes3DF);
    }
