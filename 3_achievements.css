@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
-.flex-container {display: flex; flex-wrap: wrap; justify-content: center; display: block;
+.flex-container {
+  align-content: center; 
+  width: 100%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  border: 5px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 body{background-image: url(/photos/background.png);}
 .spacer{margin-bottom: 80px;}
 
-.card {
+.modulename {
   display: block;
-  top: 100px;
-  width: 900px;
-	padding: 20px;
-	background: #e4e2e2;
-  border-radius: 10px;
-  margin-left: 250px;
-  margin-top: 95px;
+  background: white;
   text-align: center;
+  width: 900px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 h1 {color:#647694; font-family: 'Rock Salt', cursive;
