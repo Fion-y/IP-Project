@@ -67,15 +67,15 @@ h1 {
   padding-bottom: 30px;
 }
 
-th, td {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
+th {
+  font-family: 'Rock Salt', cursive;
+  background-color: #e2e8f3;
+  color:#647694;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+  margin:auto;
 }
-
-th {font-family: 'Rock Salt', cursive;}
-td {font-family: 'Varela Round', sans-serif;}
 
 .spacer{margin-bottom: 30px;}
 
