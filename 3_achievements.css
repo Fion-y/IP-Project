@@ -27,7 +27,7 @@ h1 {color:#647694; font-family: 'Rock Salt', cursive;
 	position: fixed;
 	top: 150px;
   background-color: #647694;
-  padding: 40px 0 0 0;
+  padding: 10px 0 0 0;
   border-radius: 40px;
   text-align: center;
 }
@@ -39,7 +39,7 @@ h1 {color:#647694; font-family: 'Rock Salt', cursive;
   border-radius: 50px;
   margin: 20px;
   font-family: 'Varela Round', sans-serif;
-}
+  display: block;}
 
 .ACHInavigation a:hover {
   color: #7c93b9;
