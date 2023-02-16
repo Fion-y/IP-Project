@@ -27,5 +27,8 @@ body{background-image: url(/photos/background.png);}
 
 .button{
   padding: 20px;
-  display: block;
+  color: white;
+  background: #b3bcd4;
+  border-radius: 50px;
+  margin: 20px;
 }
