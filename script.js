@@ -316,9 +316,9 @@ function reset() {
   number = 0;
   $('#number').text(number);
   var element = document.getElementById("room1");
-    element.style.display = "initial";
-    var element2 = document.getElementById("room5");
-    element2.style.display = "none";
-    var element3 = document.getElementById("room10");
-    element3.style.display = "none";
+  element.style.display = "initial";
+  var element2 = document.getElementById("room5");
+  element2.style.display = "none";
+  var element3 = document.getElementById("room10");
+  element3.style.display = "none";
 };
