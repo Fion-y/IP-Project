@@ -30,7 +30,8 @@ body{background-image: url(/photos/background.png);}
   color: white;
   background: #b3bcd4;
   border-radius: 50px;
-  margin: 20px;
+  margin: auto;
+  
 }
 
 /*star*/
