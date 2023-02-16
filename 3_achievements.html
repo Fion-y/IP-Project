@@ -5,8 +5,6 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="3_achievements.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
         <div class="nav" class="flex-container">
             <a href="3_achievements.html"><img src="/navbar/achievements.png" class="img"></a>
             <a href="4_courses.html"><img src="/navbar/courses.png" class="img"></a>
@@ -39,8 +37,9 @@
             <label>JAVASCRIPT</label>
             <input type="checkbox">
 
-            </form>
-            <button onclick="countCheckboxes()">Count Checkboxes</button> 
+        </form>
+        <script src="script.js"></script>
+        <button onclick="countCheckboxes()">Count Checkboxes</button> 
             
 
         <div class="center">
@@ -48,6 +47,7 @@
                 <h1>Interactive Development</h1>
                     <table class="center">
                         <tr>
+                        <form name="main1">
                           <th style="width:190px; color:#647694">Learning Materials</th>
                           <th style="width:170px; color:rgb(165, 183, 216)">hellohello</th>
                           <th style="width:170px; color:rgb(165, 183, 216)">hellohello</th>
@@ -144,13 +144,30 @@
                             <td><input type="checkbox" id="ca6" name="ca6" value="ca6">
                             <label for="ca6">CA 6</label></td>
                         </tr>
-
+                        </form>
+                        
                       </table>
+                      <script src="script.js"></script>
+                      <button onclick="countCheckboxes1()">Count Checkboxes</button> 
                 
             </div>
 
             <div class="modulename" id="AD">
                 <h1>Applied Design</h1>
+
+                <form name="main">    
+                    <input type="checkbox" id="ADweek1" name="ADweek1" value="ADweek1">
+                    <label for="ADweek1">Week 1</label>
+        
+                    <label>CSS</label>
+                    <input type="checkbox">
+        
+                    <label>JAVASCRIPT</label>
+                    <input type="checkbox">
+        
+                </form>
+                <script src="script.js"></script>
+                <button onclick="countCheckboxes()">Count Checkboxes</button> 
             </div>
 
             <div class="modulename" id="IS">

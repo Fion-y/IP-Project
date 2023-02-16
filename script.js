@@ -207,5 +207,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   function countCheckboxes(){
     var a = document.forms["main"];
     var x =a.querySelectorAll('input[type="checkbox"]:checked');
-    alert("${x.length}");
+    let sentence = `Stars Accumulated: ${x.length}`
+    alert(sentence);
+   }
+
+   function countCheckboxes1(){
+    var a = document.forms["main1"];
+    var x =a.querySelectorAll('input[type="checkbox"]:checked');
+    let sentence = `Stars Accumulated: ${x.length}`
+    alert(sentence);
    }
