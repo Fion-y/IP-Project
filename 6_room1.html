@@ -6,6 +6,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="6_room.css">
+        <script src="script.js"></script>
         <div class="nav" class="flex-container">
             <a href="3_achievements.html"><img src="/navbar/achievements.png" class="img"></a>
             <a href="4_courses.html"><img src="/navbar/courses.png" class="img"></a>
@@ -18,6 +19,18 @@
     </head>
 
 <body>
+
+    <script>
+        if (number === 0) {
+          var element = document.getElementById("room1");
+          element.style.display = "initial";
+          var element2 = document.getElementById("room5");
+          element2.style.display = "none";
+          var element3 = document.getElementById("room10");
+          element3.style.display = "none";
+      };
+      </script>
+
     <center>
         <div class="circle" id="room10">
         <div class="sketchfab-embed-wrapper"> <iframe title="room10" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="600" src="https://sketchfab.com/models/a5b2c6175e3f4979a34523ab8e45cda5/embed?autostart=1"> </iframe> 
@@ -37,16 +50,7 @@
               </div>
         </div>
       
-        <script>
-          if (number === 0) {
-            var element = document.getElementById("room1");
-            element.style.display = "initial";
-            var element2 = document.getElementById("room5");
-            element2.style.display = "none";
-            var element3 = document.getElementById("room10");
-            element3.style.display = "none";
-        };
-        </script>
+        
         
         
         <input type="button" value="Add" id="add" onclick="add()"/>
