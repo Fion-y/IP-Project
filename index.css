@@ -1,5 +1,7 @@
 body{background-image: url(/photos/background.png);}
 
+.spacer1{margin-bottom: 90px;}
+
 .nav {
   top: 0px;
   left: 0px;
@@ -17,6 +19,61 @@ body{background-image: url(/photos/background.png);}
   border-radius: 10px;
   margin: 15px;
 }
+.row1img {width: 200px;}
+.row2img {width: 300px;}
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+/* Container holding the image and the text */
+.coursesimg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.c1r1 {
+  position: absolute;
+  top: 110px;
+  right: 550px;
+}
+
+.c1r2 {
+  position: absolute;
+  top: 170px;
+  right: 550px;
+}
+
+.c1r3 {
+  position: absolute;
+  top: 230px;
+  right: 550px;
+}
+
+.c2r1 {
+  position: absolute;
+  top: 110px;
+  right: 250px;
+}
+
+.c2r2 {
+  position: absolute;
+  top: 170px;
+  right: 250px;
+}
+
+.c2r3 {
+  position: absolute;
+  top: 230px;
+  right: 250px;
+}
