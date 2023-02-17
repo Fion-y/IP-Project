@@ -269,18 +269,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    };
 
    function counttotal(){
-    let total = Number(IDnow) + Number(ADnow) + Number(ISnow) + Number(DFnow) + Number(GCnow) + Number(PMTnow);
+    var IDnum = document.getElementById("IDnow").value;
+    var ADnum = document.getElementById("ADnow").value;
+    var ISnum = document.getElementById("ISnow").value;
+    var DFnum = document.getElementById("DFnow").value;
+    var GCnum = document.getElementById("GCnow").value;
+    var PMTnum = document.getElementById("PMTnow").value;
+    var total = IDnum + ADnum + ISnum + DFnum + GCnum + PMTnum;
+
     sentence = `Total Stars Accumulated: ${total}`;
     
-    document.getElementById("startotal").innerHTML = total;
-    alert(sentence);
+    document.getElementById("startotal").innerHTML = IDnum;
     return counttotal();
    };
-   function countCheckboxestotal(){
-    var y = a+b+c+d+e+f+g+h+i+j ;
-    let achitotal = `Stars Accumulated: ${y}`
-    alert(countCheckboxes3DF);
-   };
+   
+
+
+
 
 
 

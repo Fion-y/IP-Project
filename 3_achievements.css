@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
+body{background-image: url(/photos/background.png);}
+html {scroll-behavior: smooth;}
+.checkboxesarea {margin-left: 120px;}
+.spacer1{margin-bottom: 80px;}
+.spacer{margin-bottom: 30px;}
+
 .nav {
   top: 0px;
   left: 0px;
@@ -20,11 +26,15 @@
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
-html {scroll-behavior: smooth;}
-
 .center {
   margin: auto;
+  width: 50%;
+  padding: 10px;
   margin-left: 500px;
+}
+
+.center1 {
+  margin: auto;
   width: 50%;
   padding: 10px;
 }
@@ -34,15 +44,14 @@ button {
   width: 50%;
   padding: 10px;
   border-radius: 50px;
-  background-color: rgb(230, 207, 168);
+  background-color: rgb(245, 218, 171);
   border-color: rgb(230, 207, 168);
-  color:white;
+  color: white;
   display: block;
+  font-size: 15px;
   font-family: 'Rock Salt', cursive;
 }
 
-body{background-image: url(/photos/background.png);}
-.spacer1{margin-bottom: 80px;}
 h1 {
   color:#647694; 
   font-family: 'Rock Salt', cursive;
@@ -54,10 +63,6 @@ h1 {
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
-}
-
-.checkboxesarea {
-  margin-left: 120px;
 }
 
 .modulename {
@@ -73,11 +78,7 @@ th {
   background-color: #e2e8f3;
   color:#647694;
   border-radius: 20px;
-  padding: 10px;
-  margin-right: 300px;
 }
-
-.spacer{margin-bottom: 30px;}
 
 label {
   background-color: #7283a2;
