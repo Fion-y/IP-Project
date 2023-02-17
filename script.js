@@ -54,7 +54,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           //clear our form using the form id and triggering it's reset feature
           $("#add-username-form").trigger("reset");
         }
-      }
+      };
   
       //[STEP 5]: Send our ajax request over to the DB and print response of the RESTDB storage to console.
       $.ajax(settings).done(function (response) {
@@ -87,7 +87,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           "x-apikey": APIKEY,
           "cache-control": "no-cache"
         },
-      }
+      };
   
       //[STEP 8]: Make our AJAX calls
       //Once we get the response, we modify our table content by creating the content internally. We run a loop to continously add on data
@@ -121,7 +121,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           data-id='${response[i]._id}' data-msg='${response[i].message}' data-name='${response[i].name}' 
           data-email='${response[i].email}'>Update</a></td></tr>`;
   
-        }
+        };
   
         //[STEP 9]: Update our HTML content
         //let's dump the content into our table body
@@ -190,7 +190,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         },
         "processData": false,
         "data": JSON.stringify(jsondata)
-      }
+      };
   
       //[STEP 13a]: send our AJAX request and hide the update username form
       $.ajax(settings).done(function (response) {
@@ -202,7 +202,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }//end updateform function
   
-  })
+  });
   
   //achievements page
   function countCheckboxesID(){
@@ -212,7 +212,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let IDtotal = `Stars Accumulated: ${ID}`;
     alert(IDtotal);
     document.getElementById("IDnow").innerHTML = Number(ID);
-   }
+   };
 
    function countCheckboxesAD(){
     var a = document.forms["ADstar"];
@@ -221,7 +221,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let ADtotal = `Stars Accumulated: ${AD}`;
     alert(ADtotal);
     document.getElementById("ADnow").innerHTML = Number(AD);
-   }
+   };
 
    function countCheckboxesIS(){
     var c = document.forms["ISstar"];
@@ -229,7 +229,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let IStotal = `Stars Accumulated: ${d.length}`
     alert(IStotal);
     document.getElementById("ISnow").innerHTML = Number(d.length);
-   }
+   };
 
    function countCheckboxes3DF(){
     var e = document.forms["DFstar"];
@@ -237,7 +237,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let DFtotal = `Stars Accumulated: ${f.length}`
     alert(DFtotal);
     document.getElementById("DFnow").innerHTML = Number(f.length);
-   }
+   };
 
    function countCheckboxesGC(){
     var g = document.forms["GCstar"];
@@ -245,7 +245,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let GCtotal = `Stars Accumulated: ${h.length}`
     alert(GCtotal);
     document.getElementById("GCnow").innerHTML = Number(h.length);
-   }
+   };
 
    function countCheckboxesPMT(){
     var i = document.forms["PMTstar"];
@@ -253,7 +253,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let PMTtotal = `Stars Accumulated: ${j.length}`
     alert(PMTtotal);
     document.getElementById("PMTnow").innerHTML = Number(j.length);
-   }
+   };
 
    function counttotal(){
     let total = Number(IDnow) + Number(ADnow) + Number(ISnow) + Number(DFnow) + Number(GCnow) + Number(PMTnow);
@@ -262,12 +262,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     document.getElementById("startotal").innerHTML = total;
     alert(sentence);
     return counttotal();
-   }
+   };
    function countCheckboxestotal(){
     var y = a+b+c+d+e+f+g+h+i+j ;
     let achitotal = `Stars Accumulated: ${y}`
     alert(countCheckboxes3DF);
-   }
+   };
 
 
 
