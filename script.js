@@ -319,7 +319,7 @@ function add() {
     var element3 = document.getElementById("room10");
     element3.style.display = "none";
     
-  } else if (number > 5) {
+  } else if (number > 5 && number < 10) {
     var element = document.getElementById("room5");
     element.style.display = "initial";
     var element2 = document.getElementById("room1");
@@ -328,11 +328,11 @@ function add() {
     element3.style.display = "none";
     
   } else if (number > 9) {
-    var element = document.getElementById("room1");
+    var element = document.getElementById("room10");
     element.style.display = "initial";
     var element2 = document.getElementById("room5");
     element2.style.display = "none";
-    var element3 = document.getElementById("room10");
+    var element3 = document.getElementById("room1");
     element3.style.display = "none";
   };
 
