@@ -1,13 +1,3 @@
-//for achievements page
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 //for login page
   //[STEP 0]: Make sure our document is A-OK
   $(document).ready(function () {
@@ -204,7 +194,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   });
   
-  //achievements page
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //for achievements page
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
   function countCheckboxesID(){
     var a = document.forms["IDstar"];
     var x =a.querySelectorAll('input[type="checkbox"]:checked');
@@ -268,13 +281,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     let achitotal = `Stars Accumulated: ${y}`
     alert(countCheckboxes3DF);
    };
-
-
-
-
-
-
-
 
 
 
