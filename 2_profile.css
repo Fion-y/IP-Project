@@ -11,6 +11,7 @@ body{background-image: url(/photos/background.png);}
 	background: #485b79;
   position: fixed;
   text-align: center;
+  z-index:1;
 }
 
 .nav a {

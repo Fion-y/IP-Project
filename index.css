@@ -1,5 +1,6 @@
-body{background-image: url(/photos/background.png);}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
+body{background-image: url(/photos/background.png);}
 .spacer1{margin-bottom: 90px;}
 
 .nav {
@@ -10,6 +11,7 @@ body{background-image: url(/photos/background.png);}
 	background: #485b79;
   position: fixed;
   text-align: center;
+  z-index:1;
 }
 
 .nav a {
@@ -44,36 +46,47 @@ body{background-image: url(/photos/background.png);}
 
 .c1r1 {
   position: absolute;
-  top: 110px;
-  right: 550px;
+  top: 60px;
+  left: 440px;
 }
 
 .c1r2 {
   position: absolute;
-  top: 170px;
-  right: 550px;
+  top: 150px;
+  left: 440px;
 }
 
 .c1r3 {
   position: absolute;
-  top: 230px;
-  right: 550px;
+  top: 240px;
+  left: 440px;
 }
-
 .c2r1 {
   position: absolute;
-  top: 110px;
-  right: 250px;
+  top: 60px;
+  left: 790px;
 }
 
 .c2r2 {
   position: absolute;
-  top: 170px;
-  right: 250px;
+  top: 150px;
+  left: 790px;
 }
 
 .c2r3 {
   position: absolute;
-  top: 230px;
-  right: 250px;
+  top: 240px;
+  left: 790px;
+}
+
+.c1r1, .c1r2, .c1r3, .c2r1, .c2r2, .c2r3 {
+  display: block;
+  background-color: #f5e3e1;
+  color: rgb(197, 128, 128);
+  padding: 25px;
+  width: 250px;
+  border-radius: 50px;
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 17px;
+  text-align: center;
 }
