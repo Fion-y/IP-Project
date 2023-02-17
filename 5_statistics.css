@@ -127,7 +127,7 @@ h2 {
 
 /*words*/
 
-.words {
+.words, .name {
   background-color: lavender;
   font-family: 'Varela Round', sans-serif;
 }

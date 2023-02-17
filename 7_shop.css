@@ -1,4 +1,5 @@
-  /*background*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
+/*background*/
 
   body{
     background-image: url(/photos/background.png);
@@ -78,7 +79,13 @@
 
   
 /*card*/
+h1{
+  font-family: 'Rock Salt';
+}
 
+p{
+  font-family: 'Varela Round', sans-serif;
+}
 /* The flip card container */
 .flip-card {
   background-color: transparent;
