@@ -51,6 +51,21 @@ body{background-image: url(/photos/background.png);}
   left: 80px;
 }
 
+/* Responsive star and timetable */
+@media screen and (max-width: 600px) {
+  .star,.text{
+    width: 100%;
+    display: block;
+  }
+
+  .timetable, .button {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    bottom: 20px;
+  }
+}
+
 /*make hamburger*/
 
 .logoimg a{
