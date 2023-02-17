@@ -12,7 +12,6 @@ body{background-image: url(/photos/background.png);}
   position: fixed;
   text-align: center;
   z-index:1;
-  font-family: 'Varela Round', sans-serif;
 }
 
 .nav a {
