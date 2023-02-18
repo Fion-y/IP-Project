@@ -311,29 +311,227 @@ function add() {
   number++;
   $('#number').text(number);
 
-  if (number < 5) {
+  if (number < 1) {
     var element = document.getElementById("room1");
-    element.style.display = "initial";
-    var element2 = document.getElementById("room5");
-    element2.style.display = "none";
-    var element3 = document.getElementById("room10");
-    element3.style.display = "none";
+     element.style.display = "initial";
+     var element2 = document.getElementById("room2");
+     element2.style.display = "none";
+     var element3 = document.getElementById("room3");
+     element3.style.display = "none";
+     var element4 = document.getElementById("room4");
+     element4.style.display = "none";
+     var element5 = document.getElementById("room5");
+     element5.style.display = "none";
+     var element6 = document.getElementById("room6");
+     element6.style.display = "none";
+     var element7 = document.getElementById("room7");
+     element7.style.display = "none";
+     var element8 = document.getElementById("room8");
+     element8.style.display = "none";
+     var element9 = document.getElementById("room9");
+     element9.style.display = "none";
+     var element10 = document.getElementById("room10");
+     element10.style.display = "none";
     
-  } else if (number > 5 && number < 10) {
-    var element = document.getElementById("room5");
-    element.style.display = "initial";
-    var element2 = document.getElementById("room1");
-    element2.style.display = "none";
-    var element3 = document.getElementById("room10");
-    element3.style.display = "none";
+  } else if (number === 2) {
+    var element = document.getElementById("room1");
+     element.style.display = "none";
+     var element2 = document.getElementById("room2");
+     element2.style.display = "initial";
+     var element3 = document.getElementById("room3");
+     element3.style.display = "none";
+     var element4 = document.getElementById("room4");
+     element4.style.display = "none";
+     var element5 = document.getElementById("room5");
+     element5.style.display = "none";
+     var element6 = document.getElementById("room6");
+     element6.style.display = "none";
+     var element7 = document.getElementById("room7");
+     element7.style.display = "none";
+     var element8 = document.getElementById("room8");
+     element8.style.display = "none";
+     var element9 = document.getElementById("room9");
+     element9.style.display = "none";
+     var element10 = document.getElementById("room10");
+     element10.style.display = "none";
     
-  } else if (number > 9) {
-    var element = document.getElementById("room10");
-    element.style.display = "initial";
-    var element2 = document.getElementById("room5");
-    element2.style.display = "none";
-    var element3 = document.getElementById("room1");
-    element3.style.display = "none";
+    } else if (number === 3) {
+      var element = document.getElementById("room1");
+       element.style.display = "none";
+       var element2 = document.getElementById("room2");
+       element2.style.display = "none";
+       var element3 = document.getElementById("room3");
+       element3.style.display = "initial";
+       var element4 = document.getElementById("room4");
+       element4.style.display = "none";
+       var element5 = document.getElementById("room5");
+       element5.style.display = "none";
+       var element6 = document.getElementById("room6");
+       element6.style.display = "none";
+       var element7 = document.getElementById("room7");
+       element7.style.display = "none";
+       var element8 = document.getElementById("room8");
+       element8.style.display = "none";
+       var element9 = document.getElementById("room9");
+       element9.style.display = "none";
+       var element10 = document.getElementById("room10");
+       element10.style.display = "none";
+      
+      } else if (number === 4) {
+        var element = document.getElementById("room1");
+         element.style.display = "none";
+         var element2 = document.getElementById("room2");
+         element2.style.display = "none";
+         var element3 = document.getElementById("room3");
+         element3.style.display = "none";
+         var element4 = document.getElementById("room4");
+         element4.style.display = "initial";
+         var element5 = document.getElementById("room5");
+         element5.style.display = "none";
+         var element6 = document.getElementById("room6");
+         element6.style.display = "none";
+         var element7 = document.getElementById("room7");
+         element7.style.display = "none";
+         var element8 = document.getElementById("room8");
+         element8.style.display = "none";
+         var element9 = document.getElementById("room9");
+         element9.style.display = "none";
+         var element10 = document.getElementById("room10");
+         element10.style.display = "none";
+        
+        } else if (number === 5) {
+          var element = document.getElementById("room1");
+           element.style.display = "none";
+           var element2 = document.getElementById("room2");
+           element2.style.display = "none";
+           var element3 = document.getElementById("room3");
+           element3.style.display = "none";
+           var element4 = document.getElementById("room4");
+           element4.style.display = "none";
+           var element5 = document.getElementById("room5");
+           element5.style.display = "initial";
+           var element6 = document.getElementById("room6");
+           element6.style.display = "none";
+           var element7 = document.getElementById("room7");
+           element7.style.display = "none";
+           var element8 = document.getElementById("room8");
+           element8.style.display = "none";
+           var element9 = document.getElementById("room9");
+           element9.style.display = "none";
+           var element10 = document.getElementById("room10");
+           element10.style.display = "none";
+          
+          } else if (number === 6) {
+            var element = document.getElementById("room1");
+             element.style.display = "none";
+             var element2 = document.getElementById("room2");
+             element2.style.display = "none";
+             var element3 = document.getElementById("room3");
+             element3.style.display = "none";
+             var element4 = document.getElementById("room4");
+             element4.style.display = "none";
+             var element5 = document.getElementById("room5");
+             element5.style.display = "none";
+             var element6 = document.getElementById("room6");
+             element6.style.display = "initial";
+             var element7 = document.getElementById("room7");
+             element7.style.display = "none";
+             var element8 = document.getElementById("room8");
+             element8.style.display = "none";
+             var element9 = document.getElementById("room9");
+             element9.style.display = "none";
+             var element10 = document.getElementById("room10");
+             element10.style.display = "none";
+            
+            } else if (number === 7) {
+              var element = document.getElementById("room1");
+               element.style.display = "none";
+               var element2 = document.getElementById("room2");
+               element2.style.display = "none";
+               var element3 = document.getElementById("room3");
+               element3.style.display = "none";
+               var element4 = document.getElementById("room4");
+               element4.style.display = "none";
+               var element5 = document.getElementById("room5");
+               element5.style.display = "none";
+               var element6 = document.getElementById("room6");
+               element6.style.display = "none";
+               var element7 = document.getElementById("room7");
+               element7.style.display = "initial";
+               var element8 = document.getElementById("room8");
+               element8.style.display = "none";
+               var element9 = document.getElementById("room9");
+               element9.style.display = "none";
+               var element10 = document.getElementById("room10");
+               element10.style.display = "none";
+              
+              } else if (number === 8) {
+                var element = document.getElementById("room1");
+                 element.style.display = "none";
+                 var element2 = document.getElementById("room2");
+                 element2.style.display = "none";
+                 var element3 = document.getElementById("room3");
+                 element3.style.display = "none";
+                 var element4 = document.getElementById("room4");
+                 element4.style.display = "none";
+                 var element5 = document.getElementById("room5");
+                 element5.style.display = "none";
+                 var element6 = document.getElementById("room6");
+                 element6.style.display = "none";
+                 var element7 = document.getElementById("room7");
+                 element7.style.display = "none";
+                 var element8 = document.getElementById("room8");
+                 element8.style.display = "initial";
+                 var element9 = document.getElementById("room9");
+                 element9.style.display = "none";
+                 var element10 = document.getElementById("room10");
+                 element10.style.display = "none";
+
+                } else if (number === 9) {
+                  var element = document.getElementById("room1");
+                   element.style.display = "none";
+                   var element2 = document.getElementById("room2");
+                   element2.style.display = "none";
+                   var element3 = document.getElementById("room3");
+                   element3.style.display = "none";
+                   var element4 = document.getElementById("room4");
+                   element4.style.display = "none";
+                   var element5 = document.getElementById("room5");
+                   element5.style.display = "none";
+                   var element6 = document.getElementById("room6");
+                   element6.style.display = "none";
+                   var element7 = document.getElementById("room7");
+                   element7.style.display = "none";
+                   var element8 = document.getElementById("room8");
+                   element8.style.display = "none";
+                   var element9 = document.getElementById("room9");
+                   element9.style.display = "initial";
+                   var element10 = document.getElementById("room10");
+                   element10.style.display = "none";
+
+                  } else if (number > 9) {
+                    var element = document.getElementById("room1");
+                     element.style.display = "none";
+                     var element2 = document.getElementById("room2");
+                     element2.style.display = "none";
+                     var element3 = document.getElementById("room3");
+                     element3.style.display = "none";
+                     var element4 = document.getElementById("room4");
+                     element4.style.display = "none";
+                     var element5 = document.getElementById("room5");
+                     element5.style.display = "none";
+                     var element6 = document.getElementById("room6");
+                     element6.style.display = "none";
+                     var element7 = document.getElementById("room7");
+                     element7.style.display = "none";
+                     var element8 = document.getElementById("room8");
+                     element8.style.display = "none";
+                     var element9 = document.getElementById("room9");
+                     element9.style.display = "none";
+                     var element10 = document.getElementById("room10");
+                     element10.style.display = "initial";
+                
+                                            
   };
 };
 
@@ -341,9 +539,23 @@ function reset() {
   number = 0;
   $('#number').text(number);
   var element = document.getElementById("room1");
-  element.style.display = "initial";
-  var element2 = document.getElementById("room5");
-  element2.style.display = "none";
-  var element3 = document.getElementById("room10");
-  element3.style.display = "none";
+     element.style.display = "initial";
+     var element2 = document.getElementById("room2");
+     element2.style.display = "none";
+     var element3 = document.getElementById("room3");
+     element3.style.display = "none";
+     var element4 = document.getElementById("room4");
+     element4.style.display = "none";
+     var element5 = document.getElementById("room5");
+     element5.style.display = "none";
+     var element6 = document.getElementById("room6");
+     element6.style.display = "none";
+     var element7 = document.getElementById("room7");
+     element7.style.display = "none";
+     var element8 = document.getElementById("room8");
+     element8.style.display = "none";
+     var element9 = document.getElementById("room9");
+     element9.style.display = "none";
+     var element10 = document.getElementById("room10");
+     element10.style.display = "none";
 };
