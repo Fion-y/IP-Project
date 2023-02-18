@@ -6,9 +6,8 @@ MyWorkroom is an educational platform that seeks to inspire and push students to
  
 ## Design Process
 
- This website's colour palette leans towards pastels and cool colours. Upon doing research, we found that blue was a colour that stimulates productivity. On top of that, pastel colours are more pleasing and easier on the eyes. We decided on rounded edges as it was not harsh on users. We kept our user's age range in mind and strived towards a minimalistic looking website, without too much graphics but at the same time, attracting students to use it often.
+ This website's colour palette leans towards pastels and cool colours. Upon doing research, we found that blue was a colour that stimulates productivity. On top of that, pastel colours are more pleasing and easier on the eyes. We decided to use the radial gradient design as it is usually used in graphics that promotes meditation and calmness. We decided on rounded edges as it was not harsh on users. We kept our user's age range in mind and strived towards a minimalistic looking website, without too much graphics but at the same time, attracting students to use it often. At the start of the project, we wanted to implement the design of kindergarten assets like crayons and very straightforward visuals but then we realise it doesnt align with our ideas.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 ### User Stories
 - As a user type, I want to perform an action, so that I can achieve a goal.
 - As a student, I want to use a platform that will motivate me, so that I can get more work done.
@@ -19,16 +18,20 @@ Here is the link to our XD Prototype. https://xd.adobe.com/view/67b961f6-c179-44
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+- Login Page
+- Shop
+- 3d Room
+- Academic Tracker and Checker 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- 3D Room: With every few points earned throughout the semester, the student/user are able to upgrade their 3d rooms with a new furniture given.
+- Achievements page: Students can check off the tasks they have done. Upon doing so, they will receive stars that they can use to buy clothes from the Shop page.
+- Shop: This page shows all the items that can be bought for your Avatar. There are also gift vouchers that students can redeem with their stars.
+- Ranking: Students can view their ranking in the cohort for each module. The names of the top 3 students in the cohort will be shown on the podium and these students can receive more stars as well. 
+- Profile: This page shows their Avatar and timetable. There is a star on the top left that shows their overall ranking in their cohort or class.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-- Another feature idea
+### Future Features to Implement
+- 3D Room: 100% customiseable
+- Add Avatar feature: Students will have a wider variety of clothing items to choose from. 
 
 ## Technologies Used
 
@@ -37,37 +40,21 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 
+### Credits and Inspiration
 
-## Testing
+Our overall idea was to integrate Bondee into Brightspace. We can get the students going with this kind of reward system.  
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+#### Brightspace (politemall) 
+- The learning materials and Assignments/CAs 
+- This platform is used very frequently by students hence we thought it should at least be engaging. This keeps their momentum and motivation high as they will have something to look forward to after completing a task.  
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+#### Bondee 
+- Bondee is a social-networking application which allows friends and acquaintances to connect and show off their own customised avatar and room.  
+- More about Bondee: https://www.prestigeonline.com/sg/pursuits/tech/what-is-bondee-avatar-app-by-metadream/  
+- We got inspired by the Avatar and room functions in this app. We thought that we could integrate such a feature to motivate and push students to complete tasks and lesson activities. 
+- We incorporated these features in MyWorkroom to allow for a creative space for students. They are free to express themselves through their choice of clothing on their Avatar and show it to their friends. This in turn can encourage other students to want to work hard and get such items as well.  
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## Credits
-
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
-### Media
-- The photos used in this site were obtained from ...
-
-### Acknowledgements
-
-- I received inspiration for this project from X
-
-
-References:
+#### References:
 https://www.youtube.com/watch?v=XM7sEpl0f7c (to make hamburger dropdown)
 https://www.w3schools.com/css/css_rwd_intro.asp (media query)
 https://www.w3schools.com/html/html_tables.asp (table)
