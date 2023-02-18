@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
 body{background-image: url(/photos/background.png);}
-.spacer1{margin-bottom: 90px;}
+.spacer1{margin-bottom: 100px;}
 
 .nav {
   top: 0px;
@@ -21,8 +21,8 @@ body{background-image: url(/photos/background.png);}
   border-radius: 10px;
   margin: 15px;
 }
-.row1img {width: 200px;}
-.row2img {width: 300px;}
+
+.row2img {width: 500px;}
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
@@ -37,59 +37,27 @@ body{background-image: url(/photos/background.png);}
   padding: 10px;
 }
 
-/* Container holding the image and the text */
 .coursesimg {
-  position: relative;
   text-align: center;
-  color: white;
 }
 
-.c1r1 {
-  position: absolute;
-  top: 60px;
-  left: 440px;
+.row1 {
+  margin: 50px;
+  text-align: center;
 }
 
-.c1r2 {
-  position: absolute;
-  top: 150px;
-  left: 440px;
-}
-
-.c1r3 {
-  position: absolute;
-  top: 240px;
-  left: 440px;
-}
-.c2r1 {
-  position: absolute;
-  top: 60px;
-  left: 790px;
-}
-
-.c2r2 {
-  position: absolute;
-  top: 150px;
-  left: 790px;
-}
-
-.c2r3 {
-  position: absolute;
-  top: 240px;
-  left: 790px;
-}
-
-.c1r1, .c1r2, .c1r3, .c2r1, .c2r2, .c2r3 {
-  display: block;
-  background-color: #f5e3e1;
-  color: rgb(197, 128, 128);
-  padding: 25px;
-  width: 250px;
+.row1 a {
+  background-color: #cda9a7;
+  color: rgb(255, 255, 255);
   border-radius: 50px;
   font-family: 'Crimson Pro', sans-serif;
   font-size: 17px;
-  text-align: center;
+  padding: 30px;
+  margin: 5px;
+  display: block;
 }
+
+.row2 {margin-top: 50px}
 
 /*make hamburger*/
 
