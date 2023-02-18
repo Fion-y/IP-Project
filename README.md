@@ -1,21 +1,21 @@
 # IP-Project
 
-# Your Project's Name
+# MyWorkroom
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
-
-Essentially, this part is your sales pitch.
+MyWorkroom is an educational platform that seeks to inspire and push students to collaborate and build relationships with their peers. With the freedom to customise their own Avatar, students will be motivated to finish their activities quickly. With each completed activity, they gain stars which they can exchange for clothing for their Avatar. They also gradually unlock furniture in their rooms with each task. This excites them since they do not know what they will unlock next.  
  
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+
+ This website's colour palette leans towards pastels and cool colours. Upon doing research, we found that blue was a colour that stimulates productivity. On top of that, pastel colours are more pleasing and easier on the eyes. We decided on rounded edges as it was not harsh on users. We kept our user's age range in mind and strived towards a minimalistic looking website, without too much graphics but at the same time, attracting students to use it often.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+### User Stories
 - As a user type, I want to perform an action, so that I can achieve a goal.
+- As a student, I want to use a platform that will motivate me, so that I can get more work done.
+- As a competitive student, I want to be able to know where I stand among those in my cohort, so that I can keep improving on my studies.
+- As a creative student, I would use this platform so that I can have freedom to casually express my creativity.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+Here is the link to our XD Prototype. https://xd.adobe.com/view/67b961f6-c179-442d-af4c-f158e20ff7e1-32ea/
 
 ## Features
 
