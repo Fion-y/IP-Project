@@ -9,7 +9,7 @@ body{background-image: url(/photos/background.png);}
   width: 100%;
   height: 130px;
 	background: #485b79;
-  position: fixed;
+  position: fixed; 
   text-align: center;
   z-index:1;
 }
@@ -22,7 +22,6 @@ body{background-image: url(/photos/background.png);}
   margin: 15px;
 }
 
-.row2img {width: 500px;}
 .logoimg {width: 100px; padding-top: 5px;}
 .img {width: 80px; padding-top: 10px; padding-bottom: 10px;}
 
@@ -41,23 +40,20 @@ body{background-image: url(/photos/background.png);}
   text-align: center;
 }
 
-.row1 {
-  margin: 50px;
-  text-align: center;
-}
-
-.row1 a {
-  background-color: #cda9a7;
-  color: rgb(255, 255, 255);
-  border-radius: 50px;
-  font-family: 'Crimson Pro', sans-serif;
-  font-size: 17px;
-  padding: 30px;
-  margin: 5px;
-  display: block;
-}
-
 .row2 {margin-top: 50px}
+
+.profileimg, .rankingimg {width: 342px;}
+
+.roomimg {margin-bottom: -170px; width: 500px;}
+
+.shopimg{width: 500px}
+
+
+
+
+
+
+
 
 /*make hamburger*/
 
@@ -157,6 +153,9 @@ body{background-image: url(/photos/background.png);}
 
 @media screen and (max-width: 992px) {
     
+  .profileimg, .rankingimg {width: 200px;}
+  .roomimg {margin-bottom: -100px; width: 350px;}
+  .shopimg{width: 350px}
 
 
   .hamburger,
