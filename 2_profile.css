@@ -3,9 +3,6 @@
 /* background*/
 body{
   background-image: url(/photos/background.png);
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 /*navbar*/
