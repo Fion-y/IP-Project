@@ -335,8 +335,6 @@ function add() {
     var element3 = document.getElementById("room1");
     element3.style.display = "none";
   };
-
-  
 };
 
 function reset() {
