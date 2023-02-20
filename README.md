@@ -58,3 +58,6 @@ Our overall idea was to integrate Bondee into Brightspace. We can get the studen
 https://www.youtube.com/watch?v=XM7sEpl0f7c (to make hamburger dropdown)
 https://www.w3schools.com/css/css_rwd_intro.asp (media query)
 https://www.w3schools.com/html/html_tables.asp (table)
+
+#### Our Website:
+https://fion-y.github.io/IP-Project/
