@@ -1,48 +1,44 @@
 <html> 
     <header> 
-        <title>Home</title>
+        <title>Sign In</title>
     </header>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="1_login.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script>
         <script src="script.js"></script>
-        <div class="nav" class="flex-container">
-            <input type="checkbox" class="toggle-menu">
-            <div class="hamburger"></div>
-            <div class="logo">
-                <a href="index.html"><img src="./photos/logo.png" class="logoimg"></a> 
-            </div>
-            <div class="menu">
-                <a href="3_achievements.html"><img src="./navbar/achievements.png" class="img">My Achievements</a>
-                <a href="4_courses.html"><img src="./navbar/courses.png" class="img">My Courses</a>
-                <a href="2_profile.html"><img src="./navbar/profile.png" class="img">My Profile</a>
-                <a href="5_statistics.html"><img src="./navbar/rankings.png" class="img">Rankings</a>
-                <a href="6_room.html"><img src="./navbar/room.png" class="img">My Room</a>
-                <a href="7_shop.html"><img src="./navbar/shop.png" class="img">Let's Shop</a>
-            </div>
-            
-        </div><br>
-        <div class="spacer1"></div>
     </head>
 
     <body>
-        <div class="center">
-            <div class="row2">
-                <a href="6_room.html"><img src="./homepage/room.png" class="roomimg" style="margin-bottom: -170px;"></a>
-                <br>
-                <a href="7_shop.html"><img src="./homepage/shop.png" class="shopimg"></a>
-            
-                <a href="2_profile.html"><img src="./homepage/profile.png" class="profileimg"></a>
-                <a href="5_statistics.html"><img src="./homepage/ranking.png" class="rankingimg"></a>
-            </div>
-            <img src="./homepage/motivational.png" style="width: 100%;">
+        <div class="flex-container">
+            <img src="./photos/logo.png" class="logo">
+            <h1>Welcome!</h1>
+            <img src="./photos/pfp.png" class="pfp">
+            <br>
+            <div class="signin">
+                <div id="add-update-msg">
+                    <div class="alert alert-success" role="alert">
+                        Account successfully added!
+                    </div>
+                </div>
+                <div class="form" id="add-username">
+                    <form id="add-username-form">
+                        <div class="form-group">
+                            <input type="text" id="username" placeholder="username" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="password" placeholder="password" class="form-control" required>
+                            <br><small id="info" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                        </div><br>
+                        <input type="submit" value="Create Account" class="btn btn-primary" id="username-submit">
+                        <input type="submit" value="Log In" class="btn btn-primary" id="username-submit">
+                        <br><br>
+                        <a href="index.html">Let's Go! → </a>
+                    </form>
                 </div>
             </div>
-            
         </div>
-
     </body>
 </html>
