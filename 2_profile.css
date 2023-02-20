@@ -52,8 +52,8 @@ body{
 
 .text {
   position: absolute;
-  left: 525px;
-  bottom: 200px;
+  top: 65px;
+  bottom: 250px;
   font-family: 'Varela Round', sans-serif;
 }
 
