@@ -1,4 +1,4 @@
-body{background-image: url(/photos/background.png);}
+body{background-image: url(./photos/background.png);}
 
 .nav {
   top: 0px;

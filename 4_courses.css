@@ -2,7 +2,7 @@
 
 
 body{
-  background-image: url(/photos/background.png);
+  background-image: url(./photos/background.png);
   font-family: 'Rock Salt';
 }
 

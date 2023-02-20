@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Nanum+Pen+Script&family=Rock+Salt&family=Varela+Round&display=swap');
 
-body{background-image: url(/photos/background.png);}
+body{background-image: url(./photos/background.png);}
 
 h1, a{
   font-family: 'Rock Salt', cursive;
